@@ -3,12 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vanessa Williams Adhiambo — Website Developer</title>
-<meta name="description" content="Vanessa Williams Adhiambo is a freelance website developer building fast, responsive sites for small businesses.">
+<title>Vanessa Williams Adhiambo — Software Engineer &amp; Designer</title>
+<meta name="description" content="Vanessa Williams Adhiambo is a software engineer, designer, and developer building useful digital products, business systems, and websites.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 <body>
 
@@ -16,13 +17,15 @@
 
 <nav id="nav">
   <a href="#top" class="logo"><span class="logo-bracket">&lt;</span>Vanessa<span class="logo-dot">.</span>dev<span class="logo-bracket">/&gt;</span></a>
-  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-controls="navLinks" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
   <div class="nav-links" id="navLinks">
     <a href="#work"><span class="mono-index">01</span>Work</a>
     <a href="#services"><span class="mono-index">02</span>Services</a>
-    <a href="#about"><span class="mono-index">03</span>About</a>
+    <a href="#process"><span class="mono-index">03</span>Process</a>
+    <a href="#about"><span class="mono-index">04</span>About</a>
+    <a href="https://github.com/Williams-V" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
     <a href="#contact" class="nav-cta">Get in touch</a>
   </div>
 </nav>
@@ -32,31 +35,76 @@
     <p class="eyebrow"><span class="pulse-dot"></span>Available for freelance projects</p>
     <h1 class="hero-title">Vanessa Williams<br>Adhiambo</h1>
 
-    <div class="terminal-role" aria-hidden="false">
-      <span class="terminal-prompt">$</span>
-      <span class="terminal-text" id="terminalText"></span><span class="terminal-cursor">|</span>
-    </div>
+    <p class="hero-role">Software engineer <span aria-hidden="true">·</span> Designer <span aria-hidden="true">·</span> Developer</p>
 
-    <p class="hero-sub">I design and build fast, responsive websites that turn visitors into customers — clean code, mobile-first layouts, and a process built around your business goals.</p>
+    <p class="hero-sub">I design and build digital products, business systems, and websites. My work brings thoughtful interfaces together with practical engineering, from early concepts to responsive, working software.</p>
 
     <div class="hero-actions">
-      <a href="#work" class="btn btn-primary">View my work</a>
-      <a href="#contact" class="btn btn-ghost">Start a project</a>
+      <a href="#work" class="btn btn-primary">Explore selected work</a>
+      <a href="https://github.com/Williams-V" target="_blank" rel="noopener" class="btn btn-ghost">View GitHub <span aria-hidden="true">↗</span></a>
     </div>
   </div>
+  <aside class="hero-aside" aria-label="Areas of focus">
+    <img src="https://avatars.githubusercontent.com/u/222258113?v=4" alt="Vanessa Williams Adhiambo">
+    <p class="hero-aside-label mono">Areas of focus</p>
+    <ul>
+      <li><span>01</span>Software engineering</li>
+      <li><span>02</span>Product &amp; interface design</li>
+      <li><span>03</span>Websites &amp; systems</li>
+    </ul>
+    <a href="https://github.com/Williams-V" target="_blank" rel="noopener" class="hero-profile-link">Williams-V on GitHub <span aria-hidden="true">↗</span></a>
+  </aside>
   <div class="hero-scroll" aria-hidden="true"><span></span></div>
 </header>
 
 <main>
 
 <section id="work" class="section">
-  <p class="section-eyebrow mono">selected-work</p>
-  <h2 class="section-title">Things I've built</h2>
-  <p class="section-lede">A mix of live client work and self-directed practice — each one built to solve a specific layout, speed, or conversion problem.</p>
+  <p class="section-eyebrow mono">Selected work</p>
+  <h2 class="section-title">Selected work</h2>
+  <p class="section-lede">Software products, business systems, and websites, including collaborative projects and client work. Each project links to its source or live experience.</p>
 
   <div class="projects">
 
-    <!-- Featured project 1 -->
+    <article class="browser-card featured">
+      <div class="browser-bar">
+        <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+        <span class="browser-url">github.com/Williams-V/Will</span>
+      </div>
+      <div class="browser-body">
+        <span class="project-badge badge-progress">In development</span>
+        <h3>Will — Group Savings Platform</h3>
+        <p>A frontend demo for a group-savings platform, with chama dashboards, member and contribution views, and downloadable reports. The current prototype uses sample data; payment processing is not connected.</p>
+        <ul class="project-points">
+          <li>Group, member, and contribution management views</li>
+          <li>Demo records saved locally in the browser</li>
+          <li>React-based interface for an evolving product concept</li>
+        </ul>
+        <div class="tags"><span>React</span><span>JavaScript</span><span>Product design</span></div>
+        <a href="https://github.com/Williams-V/Will" target="_blank" rel="noopener" class="btn-link">View repository <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+
+    <article class="browser-card featured">
+      <div class="browser-bar">
+        <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+        <span class="browser-url">github.com/Williams-V/BizPort</span>
+      </div>
+      <div class="browser-body">
+        <span class="project-badge badge-progress">In development · Collaborative</span>
+        <h3>BizPort — Small Business Management</h3>
+        <p>A mobile-friendly management-system prototype for Kenyan retailers. I contribute to the frontend interface and user-facing screens for sales, inventory, customer records, and reporting.</p>
+        <ul class="project-points">
+          <li>Interactive frontend prototype with sample data</li>
+          <li>Workflows for sales, stock, expenses, and customer balances</li>
+          <li>Product planning for a broader business-management system</li>
+        </ul>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Product design</span></div>
+        <a href="https://github.com/Williams-V/BizPort" target="_blank" rel="noopener" class="btn-link">View repository <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+
+    <!-- Client website projects -->
     <article class="browser-card featured">
       <div class="browser-bar">
         <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
@@ -65,17 +113,19 @@
       <div class="browser-body">
         <span class="project-badge badge-live">Live client site</span>
         <h3>Flint Beauty — Beauty Studio Website</h3>
-        <p>A modern, responsive beauty website designed to showcase Flint Beauty's services, highlight stunning transformations, and make booking appointments effortless. Features an elegant design, seamless navigation, and full mobile optimization for an exceptional user experience.</p>
+        <p>A polished website for Flint Beauty that presents the studio's services and work, with clear pathways for prospective clients to get in touch.</p>
         <ul class="project-points">
-          <li>Responsive, mobile-first design for a seamless beauty experience on any device</li>
-<li>Elegant, modern layout with clear appointment booking and contact options</li>
-<li>Fast-loading, performance-optimized website for a smooth and enjoyable browsing experience</li>
+          <li>Responsive layouts for a consistent experience across devices</li>
+          <li>Service information and contact options are easy to find</li>
+          <li>Custom visual direction tailored to the studio</li>
         </ul>
         <div class="tags">
           <span>HTML</span><span>CSS</span><span>JavaScript</span>
         </div>
-        <a href="https://williams-v.github.io/Flint-Beauty/" target="_blank" rel="noopener" class="btn-link">Visit live site <span aria-hidden="true">→</span></a>
+        <div class="project-links"><a href="https://github.com/Williams-V/Flint-Beauty" target="_blank" rel="noopener" class="btn-link">GitHub <span aria-hidden="true">↗</span></a><a href="https://williams-v.github.io/Flint-Beauty/" target="_blank" rel="noopener" class="btn-link">Live site <span aria-hidden="true">↗</span></a></div>
       </div>
+
+    </article>
 
     <!-- Featured project 2 -->
      <article class="browser-card featured">
@@ -85,17 +135,17 @@
       </div>
       <div class="browser-body">
         <span class="project-badge badge-live">Live client site</span>
-        <h3>Adhtech - Original Gadgets and accessories</h3>
-        <p>A modern, responsive e-commerce website for AdhTech Gadgets & Accessories, built to showcase the latest tech products and convert visitors into customers. Includes a clean product display, intuitive navigation, WhatsApp ordering, contact form, and a fully mobile-friendly design for an excellent user experience.</p>
+        <h3>AdhTech — Gadgets &amp; Accessories</h3>
+        <p>A mobile-friendly storefront for AdhTech, with product information and direct contact options to support customer inquiries.</p>
         <ul class="project-points">
-          <li>Responsive, mobile-first layout for an exceptional shopping experience</li>
-<li>Streamlined inquiry process with integrated WhatsApp and contact options</li>
-<li>Performance-optimized assets for fast loading and improved user experience</li>
+          <li>Responsive product layouts for desktop and mobile</li>
+          <li>WhatsApp and contact form integrations for inquiries</li>
+          <li>Clear navigation across product and contact information</li>
         </ul>
         <div class="tags">
           <span>HTML</span><span>CSS</span><span>JavaScript</span>
         </div>
-        <a href="https://williams-v.github.io/Electronics/" target="_blank" rel="noopener" class="btn-link">Visit live site <span aria-hidden="true">→</span></a>
+        <div class="project-links"><a href="https://github.com/Williams-V/Electronics" target="_blank" rel="noopener" class="btn-link">GitHub <span aria-hidden="true">↗</span></a><a href="https://williams-v.github.io/Electronics/" target="_blank" rel="noopener" class="btn-link">Live site <span aria-hidden="true">↗</span></a></div>
       </div>
     </article>
 
@@ -117,7 +167,7 @@
         <div class="tags">
           <span>HTML</span><span>CSS</span><span>JavaScript</span>
         </div>
-        <a href="https://williams-v.github.io/Dotty-Elegance/" target="_blank" rel="noopener" class="btn-link">Visit live site <span aria-hidden="true">→</span></a>
+        <div class="project-links"><a href="https://github.com/Williams-V/Dotty-Elegance" target="_blank" rel="noopener" class="btn-link">GitHub <span aria-hidden="true">↗</span></a><a href="https://williams-v.github.io/Dotty-Elegance/" target="_blank" rel="noopener" class="btn-link">Live site <span aria-hidden="true">↗</span></a></div>
       </div>
     </article>
 
@@ -125,30 +175,42 @@
     <article class="browser-card">
       <div class="browser-bar">
         <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
-        <span class="browser-url">figma.com/dashboard-concept</span>
+        <span class="browser-url">mzima.vercel.app</span>
       </div>
       <div class="browser-body">
-        <span class="project-badge badge-concept">Concept</span>
-        <h3>Dashboard UI Concept</h3>
-        <p>A self-directed practice project exploring dashboard layout, information hierarchy, and user flow — built to sharpen spacing and component design decisions.</p>
-        <div class="tags">
-          <span>HTML</span><span>CSS</span><span>Figma</span>
-        </div>
+        <span class="project-badge badge-live">Company website</span>
+        <h3>Mzima — Software Engineering</h3>
+        <p>The Mzima company website, presenting its software engineering services, projects, team, and digital solutions.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <div class="project-links"><a href="https://github.com/Williams-V/Mzima-" target="_blank" rel="noopener" class="btn-link">GitHub <span aria-hidden="true">↗</span></a><a href="https://mzima.vercel.app" target="_blank" rel="noopener" class="btn-link">Live site <span aria-hidden="true">↗</span></a></div>
       </div>
     </article>
 
     <article class="browser-card">
       <div class="browser-bar">
         <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
-        <span class="browser-url">landing-page-concept</span>
+        <span class="browser-url">github.com/Williams-V/Osingo-Creative-Lab</span>
       </div>
       <div class="browser-body">
-        <span class="project-badge badge-concept">Concept</span>
-        <h3>High-Conversion Landing Page</h3>
-        <p>A landing page built to test copywriting and layout principles side by side — clear calls-to-action, minimal friction, and fast load times.</p>
-        <div class="tags">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span>
-        </div>
+        <span class="project-badge badge-live">Creative studio website</span>
+        <h3>Osingo Creative Lab</h3>
+        <p>A web presence for a creative studio, bringing its identity and work together in a focused digital experience.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <div class="project-links"><a href="https://github.com/Williams-V/Osingo-Creative-Lab" target="_blank" rel="noopener" class="btn-link">GitHub <span aria-hidden="true">↗</span></a><a href="https://osingo-creative-lab.vercel.app" target="_blank" rel="noopener" class="btn-link">Live site <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </article>
+
+    <article class="browser-card">
+      <div class="browser-bar">
+        <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+        <span class="browser-url">Full-stack technical exercise</span>
+      </div>
+      <div class="browser-body">
+        <span class="project-badge badge-concept">Technical exercise</span>
+        <h3>CloudWise Business Directory</h3>
+        <p>A paginated business directory built with a Next.js frontend and a FastAPI service, exploring API integration and clear data presentation.</p>
+        <div class="tags"><span>Next.js</span><span>React</span><span>Python</span><span>FastAPI</span></div>
+        <div class="project-links"><a href="https://github.com/Williams-V/nextjs-takehome" target="_blank" rel="noopener" class="btn-link">Next.js repository <span aria-hidden="true">↗</span></a><a href="https://github.com/Williams-V/fastapi-takehome-assignment" target="_blank" rel="noopener" class="btn-link">FastAPI repository <span aria-hidden="true">↗</span></a></div>
       </div>
     </article>
 
@@ -156,58 +218,58 @@
 </section>
 
 <section id="services" class="section section-alt">
-  <p class="section-eyebrow mono"> services</p>
+  <p class="section-eyebrow mono">Services</p>
   <h2 class="section-title">How I can help</h2>
-  <p class="section-lede">Whether you need a brand-new site or a tune-up on an existing one, I keep the process simple and the result fast.</p>
+  <p class="section-lede">From digital product design to implementation, I work across interfaces, web applications, and practical business software.</p>
 
   <div class="services-grid">
     <div class="service-card">
       <span class="service-index mono">01</span>
-      <h3>Website Design &amp; Build</h3>
-      <p>A custom site designed around your business and built from scratch — no bloated templates, just clean, purposeful code.</p>
+      <h3>Software &amp; Web Development</h3>
+      <p>Responsive websites and web applications built around real requirements, with maintainable implementation.</p>
     </div>
     <div class="service-card">
       <span class="service-index mono">02</span>
-      <h3>Responsive &amp; Mobile-First</h3>
-      <p>Every layout is built to look and work great from a small phone screen up to a wide desktop display.</p>
+      <h3>Systems &amp; Applications</h3>
+      <p>Interfaces and workflows for practical tools, from business dashboards to data-driven applications.</p>
     </div>
     <div class="service-card">
       <span class="service-index mono">03</span>
-      <h3>Performance Optimization</h3>
-      <p>Faster load times, leaner assets, and cleaner code — because a slow site loses visitors before they see what you offer.</p>
+      <h3>Product &amp; Interface Design</h3>
+      <p>Clear information hierarchy, purposeful interactions, and accessible layouts shaped around the people using the product.</p>
     </div>
     <div class="service-card">
       <span class="service-index mono">04</span>
-      <h3>Ongoing Support</h3>
-      <p>Sites change as your business grows. I'm available for updates, fixes, and small feature additions after launch.</p>
+      <h3>Prototyping &amp; Iteration</h3>
+      <p>Exploring product ideas through working prototypes, then refining the experience as requirements develop.</p>
     </div>
   </div>
 </section>
 
 <section id="process" class="section">
-  <p class="section-eyebrow mono"> process</p>
+  <p class="section-eyebrow mono">Process</p>
   <h2 class="section-title">How a project runs</h2>
 
   <div class="process-track">
     <div class="process-step">
       <span class="mono">01</span>
       <h3>Discovery</h3>
-      <p>We talk through your goals, audience, and what the site needs to do for your business.</p>
+      <p>We clarify the problem, users, constraints, and what a successful outcome should deliver.</p>
     </div>
     <div class="process-step">
       <span class="mono">02</span>
       <h3>Design</h3>
-      <p>I put together a layout and visual direction, and we refine it together before any code is written.</p>
+      <p>I map the experience and visual direction, then refine the approach with you before implementation.</p>
     </div>
     <div class="process-step">
       <span class="mono">03</span>
       <h3>Build</h3>
-      <p>I build the site with clean, responsive code and test it across devices as it comes together.</p>
+      <p>I implement the agreed solution and test key workflows across supported screen sizes.</p>
     </div>
     <div class="process-step">
       <span class="mono">04</span>
       <h3>Launch</h3>
-      <p>We review the finished site, make final tweaks, and get it live — with support after launch.</p>
+      <p>We review the work, address final refinements, and prepare the agreed release or handoff.</p>
     </div>
   </div>
 </section>
@@ -215,33 +277,34 @@
 <section id="about" class="section section-alt">
   <div class="about-grid">
     <div>
-      <p class="section-eyebrow mono"> about</p>
+      <p class="section-eyebrow mono">About</p>
       <h2 class="section-title">Hi, I'm Vanessa.</h2>
-      <p class="about-text">I turn ideas into clean, modern websites. My focus is speed, mobile-first design, and code that's easy to maintain long after launch. Every project gets my full attention, so your site does exactly what your business needs it to do — no more, no less.</p>
-      <p class="about-text">I care as much about how a site feels to use as how it looks — clear navigation, fast load times, and layouts that guide visitors toward the action you actually want them to take.</p>
+      <p class="about-text">I’m a software engineer, designer, and developer interested in how useful software is conceived, designed, and built. My work spans product interfaces, business systems, and websites, with an emphasis on clear structure and practical user needs.</p>
+      <p class="about-text">I enjoy working across the product lifecycle: understanding the problem, shaping the experience, and turning the design into responsive, maintainable software. I’m currently building systems for group savings and small-business management.</p>
+      <a href="https://github.com/Williams-V" target="_blank" rel="noopener" class="btn-link profile-link">Explore my GitHub profile <span aria-hidden="true">↗</span></a>
     </div>
     <div class="skills-panel">
       <p class="skills-label mono"> skills</p>
       <div class="skill-group">
-        <h4>Core web</h4>
-        <div class="skills"><span class="skill">HTML5</span><span class="skill">CSS3</span><span class="skill">JavaScript</span><span class="skill">Responsive Design</span></div>
+        <h4>Web &amp; application development</h4>
+        <div class="skills"><span class="skill">HTML5</span><span class="skill">CSS3</span><span class="skill">JavaScript</span><span class="skill">React</span><span class="skill">Next.js</span></div>
       </div>
       <div class="skill-group">
-        <h4>Languages</h4>
-        <div class="skills"><span class="skill">Java</span><span class="skill">C++</span><span class="skill">Python</span></div>
+        <h4>Programming languages</h4>
+        <div class="skills"><span class="skill">Python</span><span class="skill">Java</span><span class="skill">C++</span></div>
       </div>
       <div class="skill-group">
-        <h4>Tools &amp; practice</h4>
-        <div class="skills"><span class="skill">Git</span><span class="skill">Performance Optimization</span></div>
+        <h4>Engineering &amp; design</h4>
+        <div class="skills"><span class="skill">FastAPI</span><span class="skill">Git &amp; GitHub</span><span class="skill">UI / UX design</span><span class="skill">Responsive design</span></div>
       </div>
     </div>
   </div>
 </section>
 
 <section id="contact" class="section contact-section">
-  <p class="section-eyebrow mono">contact</p>
-  <h2 class="section-title">Let's work together</h2>
-  <p class="section-lede">Have a project in mind? I'm currently available for freelance work — reach out and let's talk about it.</p>
+  <p class="section-eyebrow mono">Contact</p>
+  <h2 class="section-title">Have a project in mind?</h2>
+  <p class="section-lede">I’m available for freelance projects. Get in touch to discuss your goals, timeline, and next steps.</p>
   <div class="contact-actions">
     <a href="mailto:vanessaadhiambo04@gmail.com" class="btn btn-primary">Email me</a>
     <a href="https://wa.me/254740916977" target="_blank" rel="noopener" class="btn btn-ghost btn-whatsapp">
@@ -254,9 +317,6 @@
 </main>
 
 <footer class="site-footer">
-  <p>© 2026 Vanessa Williams Adhiambo. Built by me, line by line.</p>
+  <p>© 2026 Vanessa Williams Adhiambo <span aria-hidden="true">·</span> Software engineer, designer &amp; developer</p>
 </footer>
-
-<a href="https://wa.me/254740916977" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.868-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52 -.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5 -.669 -.51 -.173 -.008 -.371 -.01 -.57 -.01 -.198 0 -.52 .074 -.792 .372 -.272 .297 -1.04 1.016 -1.04 2.479 0 1.462 1.065 2.875 １.２１３ ３．０７４ .１４９ .１９８ ２．０９６ ３．２ ５．０７７ ４．４８７ .７０９ .３０６ １．２６２ .４８９ １．６９４ .６２５ .７１２ .２２７ １．３６ .１９５ １．８７１ .１１８ .５７１ -.０８５ １．７５８ -.７１９ ２．００６ -₁．４₁₃ .₂₄₈ -․₆₉₄ .₂₄₈ -₁．₂₈₉ .₁₇₃ -₁．₄₁₃ -․₀₇₄ -․₁₂⁴ -․₂⁷₂ -․₁⁹⁸ -․៥⁷ -․³⁴⁷z"/><path d="M₁₂．₀₀⁴ ₂C₆．₄₈₆ ₂ ₂ ₆．₄₈₆ ₂ ₁₂．₀₀⁴c₀ ₁．₈⁸⁷ .៥² ³．₆⁵³ ₁．₄² ៥．₁⁶⁶L₂ ₂²l⁴．⁹⁴ -₁．³⁹⁶c¹．⁴⁵ .⒌९   ₍   ₍   ₍   ₍   ₍   ₍   ₍   ₍   ₍   ₍   ₍   ₍   ₍   ₍   ₍   ₍   ₍   ₍   ₍   ₍   ₍   ₍   ₍   ₍   ₍   
 </html>

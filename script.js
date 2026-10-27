@@ -1,50 +1,3 @@
-// ===========================================================
-// Terminal-style role typewriter
-// ===========================================================
-const roles = [
-  "Website Developer",
-  "Frontend Builder",
-  "Responsive Design Specialist",
-  "Freelance Web Developer"
-];
-
-const terminalTextEl = document.getElementById('terminalText');
-
-let roleIndex = 0;
-let charIndex = 0;
-let deleting = false;
-
-function typeLoop() {
-  if (!terminalTextEl) return;
-
-  const currentRole = roles[roleIndex];
-
-  if (!deleting) {
-    charIndex++;
-    terminalTextEl.textContent = currentRole.slice(0, charIndex);
-    if (charIndex === currentRole.length) {
-      deleting = true;
-      setTimeout(typeLoop, 1600);
-      return;
-    }
-  } else {
-    charIndex--;
-    terminalTextEl.textContent = currentRole.slice(0, charIndex);
-    if (charIndex === 0) {
-      deleting = false;
-      roleIndex = (roleIndex + 1) % roles.length;
-    }
-  }
-
-  const speed = deleting ? 35 : 65;
-  setTimeout(typeLoop, speed);
-}
-
-typeLoop();
-
-// ===========================================================
-// Mobile nav toggle
-// ===========================================================
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
 
@@ -62,6 +15,30 @@ if (navToggle && navLinks) {
   });
 }
 
+if ('IntersectionObserver' in window && navLinks) {
+  const sectionLinks = [...navLinks.querySelectorAll('a[href^="#"]')];
+  const sections = sectionLinks
+    .map(link => document.querySelector(link.getAttribute('href')))
+    .filter(Boolean);
+
+  const sectionObserver = new IntersectionObserver(entries => {
+    const activeSection = entries
+      .filter(entry => entry.isIntersecting)
+      .sort((first, second) => second.intersectionRatio - first.intersectionRatio)[0];
+
+    if (!activeSection) return;
+
+    sectionLinks.forEach(link => {
+      if (link.getAttribute('href') === `#${activeSection.target.id}`) {
+        link.setAttribute('aria-current', 'location');
+      } else {
+        link.removeAttribute('aria-current');
+      }
+    });
+  }, { rootMargin: '-20% 0px -65% 0px', threshold: 0 });
+
+  sections.forEach(section => sectionObserver.observe(section));
+}
 
 // Reveal sections on scroll
 
